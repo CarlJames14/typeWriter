@@ -1,0 +1,63 @@
+body {
+    height: 100vh;
+    background: #333 url(minimalist-lifestyle.jpeg) no-repeat center center/cover;
+    color: rgb(26, 23, 23);
+    overflow: hidden;
+}
+
+.svg {
+    display: flex;
+    position: absolute;
+    left: 50%;
+}
+
+img {
+    width: 80%;
+    height: auto;
+}
+
+.container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    padding: 0 3rem;
+    margin-left: 13rem;
+}
+h1, h2 {
+    
+    margin: 0.4rem;
+}
+
+h1{
+    font-weight: 400;
+    font-size: 4rem;
+    
+}
+
+.typing {
+    font-size: 3rem;
+
+}
+
+h2 {
+    font-weight: 200;
+    font-size: 2rem;
+    color: rgb(90, 90, 90);
+}
+
+.txt-type > .txt {
+    border-right: 0.2rem solid rgba(26, 23, 23);
+    animation: blinkTextCursor 500ms steps(40) infinite normal;
+}
+
+@keyframes blinkTextCursor {
+    from {
+      border-right-color: rgba(26, 23, 23);
+    }
+    to {
+      border-right-color: transparent;
+    }
+  }
+
